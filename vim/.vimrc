@@ -18,3 +18,7 @@ set hlsearch
 set smartcase
 set autochdir
 set hidden
+
+" Paredit customizations
+" - disable electric return
+let g:paredit_electric_return=0
