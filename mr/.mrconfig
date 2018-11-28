@@ -1,0 +1,8 @@
+[DEFAULT]
+# show all repos current branch
+br = git branch
+
+# checkout master, pull changes
+top =
+     git checkout master
+     git pull

@@ -1,0 +1,5 @@
+Host github.personal
+     HostName github.com
+     User git
+     IdentityFile /Users/n/.ssh/youngnh_gmail
+     IdentitiesOnly yes
