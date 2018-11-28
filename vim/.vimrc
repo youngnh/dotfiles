@@ -3,8 +3,10 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'vim-scripts/paredit.vim'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
+colorscheme solarized
 set number
 set showmode
 set showcmd
