@@ -2,8 +2,9 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
-Plug 'vim-scripts/paredit.vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'vim-scripts/paredit.vim'
+Plug 'tpope/vim-fireplace'
 call plug#end()
 
 colorscheme solarized
