@@ -42,7 +42,7 @@ function __prompt_command() {
 export EDITOR=vim
 
 # Github API Token to benefit brew
-export HOMEBREW_GITHUB_API_TOKEN=5ea00e6d41d892b6187252d684d911578c2b04ed
+export HOMEBREW_GITHUB_API_TOKEN=dummy_token_replace_me
 
 # opam
 eval $(opam config env)
