@@ -10,8 +10,6 @@ colorscheme solarized
 set number
 set showmode
 set showcmd
-set ruler
-set autoindent
 set expandtab
 set nowrap
 set hlsearch
