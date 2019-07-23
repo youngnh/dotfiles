@@ -42,7 +42,7 @@ function __prompt_command() {
 export EDITOR=vim
 
 # Github API Token to benefit brew
-export HOMEBREW_GITHUB_API_TOKEN=dummy_token_replace_me
+export HOMEBREW_GITHUB_API_TOKEN=d9346ddf68d3f6b826eecf605b14dad992e3628c
 
 # opam
 eval $(opam config env)
@@ -50,6 +50,11 @@ eval $(opam config env)
 # nvm
 export NVM_DIR="/Users/n/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# chruby
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+RUBIES+=(~/.rbenv/versions/*)
 
 ########################################
 # PATH
