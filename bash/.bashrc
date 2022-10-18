@@ -17,9 +17,7 @@ source ~/.custom/git-prompt.sh
 PROMPT_COMMAND=__prompt_command
 
 # direnv (works by prepending to PROMPT_COMMAND)
-eval $(direnv hook bash)
-
-source ~/.custom/iterm_shell_integration.sh  # this must come after PROMPT_COMMAND
+eval "$(direnv hook bash)"
 
 function __prompt_command() {
   local STATUS="$?"
@@ -44,29 +42,15 @@ export EDITOR=vim
 # Github API Token to benefit brew
 export HOMEBREW_GITHUB_API_TOKEN=d9346ddf68d3f6b826eecf605b14dad992e3628c
 
-# opam
-eval $(opam config env)
-
 # nvm
 export NVM_DIR="/Users/n/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-RUBIES+=(~/.rbenv/versions/*)
 
 ########################################
 # PATH
 
 # Put Homebrew ahead of system defaults
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/n/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/n/google-cloud-sdk/completion.bash.inc'
 
 # place ~/bin in front of everything
 export PATH=/Users/n/bin:$PATH
