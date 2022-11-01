@@ -8,7 +8,6 @@ Plug 'tpope/vim-fireplace'
 Plug 'pangloss/vim-javascript'
 call plug#end()
 
-colorscheme solarized
 set number
 set showmode
 set showcmd
