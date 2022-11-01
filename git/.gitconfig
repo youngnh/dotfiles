@@ -21,3 +21,5 @@
 	path = /usr/local/bin/p4merge
 [diff]
 	submodule = log
+[init]
+	defaultBranch = main
