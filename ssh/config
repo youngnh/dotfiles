@@ -3,3 +3,11 @@ Host github.personal
      User git
      IdentityFile /Users/n/.ssh/youngnh_gmail
      IdentitiesOnly yes
+
+Host scc.nfs.net
+     HostName ssh.phx.nearlyfreespeech.net
+     User nyoung_lmbchiropractic
+
+Host campmiller.nfs.net
+     HostName ssh.phx.nearlyfreespeech.net
+     User nyoung_campmiller
