@@ -6,3 +6,8 @@ br = git branch
 top =
      git checkout master
      git pull
+
+# checkout main, pull changes
+main =
+     git checkout main
+     git pull
