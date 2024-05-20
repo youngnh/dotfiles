@@ -8,6 +8,9 @@ alias ll='ls -lahG'
 alias la='ls -AG'
 alias l.='ls -d .*'
 
+# alias npm to pnpm
+alias npm=pnpm
+
 export EDITOR=vim
 
 # Github API Token to benefit brew
