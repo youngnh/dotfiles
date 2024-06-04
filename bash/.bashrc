@@ -11,7 +11,7 @@ alias l.='ls -d .*'
 # alias npm to pnpm
 alias npm=pnpm
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # Github API Token to benefit brew
 export HOMEBREW_GITHUB_API_TOKEN=d9346ddf68d3f6b826eecf605b14dad992e3628c
@@ -44,7 +44,7 @@ export GOBIN=$HOME/go/bin
 export PATH=$GOBIN:$PATH
 
 # place ~/bin in front of everything
-export PATH=/Users/n/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # TeX
 export PATH=$PATH:/Library/TeX/texbin
