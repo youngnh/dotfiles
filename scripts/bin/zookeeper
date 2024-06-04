@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail && cd $HOME
+
+docker run --rm \
+    --name zookeeper \
+    --network walmart \
+    -p 2181:2181 \
+    zookeeper:3.4.9
+

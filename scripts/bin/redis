@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail && cd $HOME
+
+docker run --rm \
+    --name redis \
+    --network walmart \
+    -p 6379:6379 \
+    redis:5.0.5
+

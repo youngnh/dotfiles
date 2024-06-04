@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail && cd $HOME
+
+docker run --rm \
+    --name cass \
+    --network walmart \
+    -p 9042:9042 \
+    cassandra:3.11
+
