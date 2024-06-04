@@ -8,7 +8,8 @@ alias ll='ls -lahG'
 alias la='ls -AG'
 alias l.='ls -d .*'
 
-# alias npm to pnpm
+# alias commands
+alias vim=nvim
 alias npm=pnpm
 
 export EDITOR=nvim
@@ -43,11 +44,11 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export GOBIN=$HOME/go/bin
 export PATH=$GOBIN:$PATH
 
-# place ~/bin in front of everything
-export PATH=$HOME/bin:$PATH
-
 # TeX
 export PATH=$PATH:/Library/TeX/texbin
+
+# place ~/bin in front of everything
+export PATH=$HOME/bin:$PATH
 
 set -o vi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
