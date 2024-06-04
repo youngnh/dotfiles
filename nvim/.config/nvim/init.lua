@@ -49,6 +49,17 @@ require("lazy").setup({
     end
   },
   {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      vim.g.loaded_netrw = 1
+      vim.g.loaded_newrwPlugin = 1
+
+      vim.opt.termguicolors = true
+
+      require("nvim-tree").setup()
+    end
+  },
+  {
     "kylechui/nvim-surround",
     version = "*",
     event = "VeryLazy",
