@@ -47,6 +47,13 @@ export PATH=$GOBIN:$PATH
 # TeX
 export PATH=$PATH:/Library/TeX/texbin
 
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 # place ~/bin in front of everything
 export PATH=$HOME/bin:$PATH
 
