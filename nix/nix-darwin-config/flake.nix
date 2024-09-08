@@ -13,8 +13,9 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
-        cabal-install clojure direnv fd fzf ghc git jq leiningen mr neovim
-        pkg-config ripgrep rlwrap stack starship stow tmux tree wget zlib zulu8
+        cabal-install clojure cocoapods direnv emacs fd fzf ghc git go
+        google-cloud-sdk inkscape jq leiningen mr neovim pkg-config ripgrep
+        rlwrap stack starship stow tmux tree wget zlib zulu11
       ];
 
       # Install the development headers if they are part of a package's output
@@ -45,11 +46,11 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .
-    darwinConfigurations."m-f95m2630kv" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."sifaka" = nix-darwin.lib.darwinSystem {
       modules = [ configuration ];
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."m-f95m2630kv".pkgs;
+    darwinPackages = self.darwinConfigurations."sifaka".pkgs;
   };
 }
