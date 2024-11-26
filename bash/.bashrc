@@ -11,6 +11,7 @@ alias l.='ls -d .*'
 # alias commands
 alias vim=nvim
 alias npm=pnpm
+alias npx='pnpm dlx'
 
 export EDITOR=nvim
 
@@ -34,8 +35,14 @@ if ! [[ "${PROMPT_COMMAND:-}" =~ _nvmrc_hook ]]; then
   PROMPT_COMMAND="_nvmrc_hook${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 fi
 
+export XDG_CONFIG_HOME="$HOME/.config"
+export SPACEMACSDIR="$XDG_CONFIG_HOME/spacemacs"
+
 ########################################
 # PATH
+
+# GHCup
+[[ -f "/Users/n/.ghcup/env" ]] && source "/Users/n/.ghcup/env" # ghcup-env
 
 # Put Homebrew ahead of system defaults
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
