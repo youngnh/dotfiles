@@ -13,9 +13,9 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
-        cabal-install clojure cocoapods direnv emacs fd fzf ghc git go
-        google-cloud-sdk inkscape jq leiningen mr neovim pkg-config ripgrep
-        rlwrap stack starship stow tmux tree wget zlib zulu11
+        cabal-install clj-kondo clojure cmake cocoapods direnv emacs fd fzf git
+        go google-cloud-sdk ispell inkscape jq leiningen mr neovim pkg-config
+        ripgrep rlwrap stack starship stow tmux tree wget zlib zulu11
       ];
 
       # Install the development headers if they are part of a package's output
