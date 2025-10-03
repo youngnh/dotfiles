@@ -10,8 +10,8 @@ alias l.='ls -d .*'
 
 # alias commands
 alias vim=nvim
-alias npm=pnpm
-alias npx='pnpm dlx'
+# alias npm=pnpm
+# alias npx='pnpm dlx'
 
 export EDITOR=nvim
 
@@ -55,11 +55,11 @@ export PATH=$GOBIN:$PATH
 export PATH=$PATH:/Library/TeX/texbin
 
 # pnpm
-export PNPM_HOME="$HOME/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# export PNPM_HOME="$HOME/Library/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
 
 # place ~/bin in front of everything
 export PATH=$HOME/bin:$PATH
@@ -68,3 +68,4 @@ set -o vi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(starship init bash)"
+eval "$(direnv hook bash)"
