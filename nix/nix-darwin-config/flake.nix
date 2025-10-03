@@ -13,17 +13,14 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
-        cabal-install clj-kondo clojure cmake cocoapods direnv emacs fd fzf git
-        go google-cloud-sdk ispell inkscape jq leiningen mr neovim pkg-config
-        ripgrep rlwrap stack starship stow tmux tree wget zlib zulu11
+        cabal-install clj-kondo clojure cmake cocoapods coreutils direnv emacs
+        erlang_27 fd fzf git go google-cloud-sdk helix ispell inkscape jq
+        leiningen lua mr neovim pkg-config python3 rebar3 ripgrep rlwrap stack
+        starship stow tmux tree wget zlib zulu11
       ];
 
       # Install the development headers if they are part of a package's output
       # environment.extraOutputsToInstall = [ "dev" "doc" "static" ];
-
-      # Auto upgrade nix package and the daemon service.
-      services.nix-daemon.enable = true;
-      # nix.package = pkgs.nix;
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
