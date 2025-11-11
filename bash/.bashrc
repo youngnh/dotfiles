@@ -44,6 +44,9 @@ export SPACEMACSDIR="$XDG_CONFIG_HOME/spacemacs"
 # GHCup
 [[ -f "/Users/n/.ghcup/env" ]] && source "/Users/n/.ghcup/env" # ghcup-env
 
+# Stack
+export PATH=$HOME/.local/bin:$PATH
+
 # Put Homebrew ahead of system defaults
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
