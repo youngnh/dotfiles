@@ -15,8 +15,8 @@
       environment.systemPackages = with pkgs; [
         cabal-install clj-kondo clojure cmake cocoapods coreutils direnv emacs
         erlang_27 fd fzf git go google-cloud-sdk helix ispell inkscape jq
-        leiningen lua mr neovim pkg-config python3 rebar3 ripgrep rlwrap stack
-        starship stow tmux tree wget zlib zulu11
+        leiningen lua mr nim neovim pkg-config python3 rebar3 ripgrep rlwrap
+        stack starship stow tmux tree wget zig zlib zulu11
       ];
 
       # Install the development headers if they are part of a package's output
