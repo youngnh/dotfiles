@@ -27,7 +27,7 @@
 
       # Configure bash as interactive shell
       programs.bash.enable = true;
-      # programs.bash.enableCompletion = true;
+      programs.bash.completion.enable = true;
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
