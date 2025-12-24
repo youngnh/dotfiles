@@ -15,9 +15,6 @@ alias vim=nvim
 
 export EDITOR=nvim
 
-# Github API Token to benefit brew
-export HOMEBREW_GITHUB_API_TOKEN=d9346ddf68d3f6b826eecf605b14dad992e3628c
-
 # nvm
 export NVM_DIR="/Users/n/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
